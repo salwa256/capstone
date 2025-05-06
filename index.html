@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="logo.png" alt="Logo" style="width: 32px; height: 32px;">
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="predict.html">Predict</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="article.html">Article</a></li>
+            </ul>
+            <button id="tombol"><a href="about_us.html"></a>About Us</button>
+        </div>
+    </nav>
+
+    <div class="upload-container">
+        <!-- Form untuk unggah foto dari perangkat -->
+        <div class="upload-box">
+          <label for="imageinput" class="upload-label">Upload Foto</label>
+          <input type="file" id="imageinput" accept="image/*">
+          <span id="file-name" class="file-name">Belum ada file</span>
+          <div id="upload-foto"></div>
+        </div>
+      
+        <!-- Tombol Deteksi -->
+        <div class="detect-box">
+          <button id="deteksi-button">Prediksi</button>
+          <p id="deteksi-jawab" style="display: none;"></p>
+        </div>
+    </div>
+      
+    <div class="hasil_klasifikasi">
+        <!--Tampilan Hasil Klasifikasi-->
+        
+    </div>
+
+    <div class="rekomendasi_produk">
+        <!--Menampilkan Rekomendasi Produk-Produk Pestisida-->
+        <div class="produk1">
+            <img id="foto1" alt="Foto Pestisida">
+            <a href="">Pestisida 1</a>
+        </div>
+    </div>
+
+    <div class="keterangan">
+        <!--Keterangan anggota dan lain-lain-->
+        <ul class="h3_p">
+            <h3>ScanToSave</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem veritatis pariatur excepturi ducimus corrupti quisquam, vero ipsam impedit quaerat dolore laboriosam rerum deserunt. Explicabo autem, ab eaque debitis quia esse?</p>
+        </ul>
+        <ul class="link">
+            <li><a href="">Medium</a></li>
+            <li><a href="">shopee</a></li>
+            <li><a href="">Email</a></li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>
