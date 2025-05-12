@@ -101,22 +101,68 @@
     font-size: 14px;
   }
   
-.hasil_klasifikasi {
-    display: flex;
-    align-items: center;
-    border: 2px solid #c3c5c4;
+  .hasil_klasifikasi {
+    border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 200px;
-    margin-top: 40px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
 }
 
-.rekomendasi_produk {
-    display: flex;
-    border: 2px solid #c3c5c4;
-    border-radius: 10px;
-    padding: 200px 250px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+  
+
+.rekomendasi_produk,
+.rekomendasi_article {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1000px;
+  background-color: #fff;
+}
+
+.rekomendasi_produk h2,
+.rekomendasi_article h2 {
+  color: #004d2c;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.produk-list,
+.article-list {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.produk-item,
+.article-item {
+  display: flex;
+  flex-direction: column; /* susun vertikal */
+  align-items: start;     /* opsional: bisa juga center */
+  max-width: 200px;       /* opsional: batas lebar item */
+}
+
+.produk-item img,
+.article-item img {
+  width: 100%;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 5px;
+  object-fit: cover; /* biar gambar tidak gepeng */
+}
+
+.produk-item a,
+.article-item a {
+  margin: 5px 0 0 0; /* jarak dari gambar ke teks */
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
 }
 
 .keterangan {
@@ -180,7 +226,7 @@
   justify-content: space-between;
   padding: 10px 60px;
   align-items: flex-start;
-  margin-top: 500px;
+  margin-top: 20px;
   
 }
 
@@ -232,4 +278,140 @@
   background-size: cover;
   background-position: center; 
   display: auto;
+}
+
+.bg {
+  position: relative;
+  height: 400px;
+  background-image: url('foto/2.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* hitam transparan */
+  z-index: 0;
+}
+
+.hero {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.bg-store {
+  position: relative;
+  height: 400px;
+  background-image: url('foto/3.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bg-About {
+  position: relative;
+  height: 400px;
+  background-image: url('foto/image.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.judul-pengatur {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 50px 80px;
+}
+
+.konten-teks {
+  flex: 1;
+  max-width: 60%;
+}
+
+.konten-teks h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.konten-teks p {
+  text-align: justify;
+  margin-right: 20px;
+}
+
+.konten-gambar img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #c3c5c4;
+  border-radius: 10px;
+  padding: 100px;
+  background-color: #f2a63b; 
+}
+
+.content-keterangan {
+  background-color: #cde1dc; /* warna abu kehijauan */
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content-keterangan h2 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+.fitur-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.fitur {
+  display: flex;
+  flex-direction: column; /* arah vertikal: gambar di atas, teks di bawah */
+  align-items: center;
+  gap: 12px;
+  max-width: 200px;
+  text-align: center; /* biar teks rata tengah */
+}
+
+.gambar {
+  background-color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.gambar img {
+  width: 50px;
+  height: 50px;
+}
+
+.fitur p {
+  margin: 0;
+  color: #000;
+  font-size: 16px;
 }
