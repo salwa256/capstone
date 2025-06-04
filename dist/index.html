@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
+    <title>LeafCheck</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,14 +21,33 @@
             <a href="about_us.html" class="tombol" id="tombol">About Us</a>        </div>
     </nav>
 
-    <nav class="bg">
-        <div class="overlay"></div>
-        <h3 class="hero">We've got everything you need, all in one place</h3>
-    </nav>
-
-    <div class="rekomendasi_produk">
+    <div class="upload-container">
+        <!-- Form untuk unggah foto dari perangkat -->
+        <div class="upload-box">
+          <label for="imageinput" class="upload-label">Upload Foto</label>
+          <input type="file" id="imageinput" accept="image/*">
+          <span id="file-name" class="file-name">Belum ada file</span>
+          <div id="upload-foto"></div>
+        </div>
+      
+        <!-- Tombol Deteksi -->
+        <div class="detect-box">
+          <button id="deteksi-button">Prediksi</button>
+          <p id="deteksi-jawab" style="display: none;"></p>
+        </div>
+    </div>
+      
+    <div class="hasil_klasifikasi">
+        <!--Tampilan Hasil Klasifikasi-->
         
     </div>
+
+    <div class="rekomendasi_produk">
+      </div>
+      
+      <div class="rekomendasi_article">
+      </div>
+    
     <div class="keterangan2">
         <!--Keterangan anggota dan lain-lain-->
         <ul class="h3_p">
@@ -40,7 +59,7 @@
             <li><a href="">shopee</a></li>
             <li><a href="">Email</a></li>
         </ul>
-        </div>
+      </div>
     </div>
 </body>
 </html>

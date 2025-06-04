@@ -3,10 +3,46 @@
   "version": "1.0.0",
   "description": "Proyek web",
   "scripts": {
-    "start": "vite"
+    "start": "webpack serve",
+    "build": "webpack"
   },
   "devDependencies": {
-    "vite": "^5.4.19"
+    "@babel/core": "^7.27.3",
+    "@babel/preset-env": "^7.27.2",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "vite": "^5.4.19",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "acorn": "^8.14.1",
+    "buffer-from": "^1.1.2",
+    "esbuild": "^0.21.5",
+    "nanoid": "^3.3.11",
+    "picocolors": "^1.1.1",
+    "postcss": "^8.5.3",
+    "rollup": "^4.40.2",
+    "source-map": "^0.6.1",
+    "source-map-js": "^1.2.1",
+    "source-map-support": "^0.5.21",
+    "terser": "^5.39.0",
+    "undici-types": "^6.21.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salwa256/capstone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/salwa256/capstone/issues"
+  },
+  "homepage": "https://github.com/salwa256/capstone#readme"
 }
