@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     formData.append("imagefile", selectedFile);
 
     try {
-      const response = await fetch("https://dbsproject-production.up.railway.app/", {
+      const response = await fetch("https://snaptosave-production.up.railway.app/", {
         method: "POST",
         body: formData,
       });

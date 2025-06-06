@@ -16,8 +16,8 @@ export function getProduk(label) {
       {
         nama: "Fungisida Antracol 250gr",
         harga: "Rp 68.300",
-        link: "https://down-id.img.susercontent.com/file/sg-11134201-7rdx0-lyid7bhmdtt4b5@resize_w450_nl.webp",
-        gambar: "https://s.shopee.co.id/60FVDBcX1X"
+        link: "https://s.shopee.co.id/60FVDBcX1Xbp",
+        gambar: "https://down-id.img.susercontent.com/file/sg-11134201-7rdx0-lyid7bhmdtt4b5@resize_w450_nl.webp"
       }
     ],
     Early_blight: [
@@ -140,24 +140,18 @@ export function getProduk(label) {
         gambar: "Rp. 49.197"
       }
     ],
-    Leaf_mold: [
+    Leaf_Mold: [
       {
-        nsms: "Pestisida Nabati / Minyak Mimba / Neem Oil",
-        harga: "https://down-id.img.susercontent.com/file/id-11134207-7rasm-m5v8hyp5ssrc85.webp",
+        nama: "Pestisida Nabati / Minyak Mimba / Neem Oil",
+        harga: "Rp. 39.987",
         link: "https://s.shopee.co.id/3LEk5JhPat",
-        gambar: "Rp. 39.987"
+        gambar: "https://down-id.img.susercontent.com/file/id-11134207-7rasm-m5v8hyp5ssrc85.webp"
       },
       {
-        nsms: "Fungisida Organik Hayati ANFUSH",
+        nama: "Fungisida Organik Hayati ANFUSH",
         harga: "Rp. 43.000",
         link: "https://s.shopee.co.id/4fk7gQQ2JP",
         gambar: "https://down-id.img.susercontent.com/file/id-11134207-7quky-lf0684s4k33y57.webp"
-      },
-      {
-        nsms: "",
-        harga: "",
-        link: "",
-        gambar: ""
       }
     ],
     Spider_mites: [
@@ -168,7 +162,7 @@ export function getProduk(label) {
         gambar: "https://down-id.img.susercontent.com/file/id-11134207-7rasm-m5v8hyp5ssrc85.webp"
       },
       {
-        nama: "nsektisida Hayati BIO-PEST KILLER ",
+        nama: "insektisida Hayati BIO-PEST KILLER ",
         harga: "Rp. 250.000",
         link: "https://s.shopee.co.id/2LMCugce83",
         gambar: "https://down-id.img.susercontent.com/file/id-11134207-7rbk3-m6yz511rtn2hec.webp"

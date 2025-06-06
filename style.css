@@ -5,7 +5,16 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    margin: 0;
+    margin: 0px;
+}
+
+body {
+  margin:0;
+}
+
+.body {
+   margin:0px;
+   padding:0px;
 }
 
 .tombol {
@@ -19,15 +28,6 @@
 
 }
 
-.navbar {
-    background-color: #004d2c;
-    border-bottom: 1px solid #004d2c;
-    padding: 4px 12px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    margin: 0;
-}
 
 .navbar-container {
     display: flex;
@@ -280,6 +280,12 @@
   text-align: center;
   overflow: hidden;
   margin: 0;
+  width: 100%;
+}
+
+.store {
+   margin:0px;
+   padding:0px;
 }
 
 .overlay {
@@ -299,6 +305,7 @@
   padding: 0 20px;
   z-index: 1;
   position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .bg-store {
@@ -439,7 +446,6 @@
     padding: 8px 20px;
     align-items: flex-start;
   }
-
 
   .hasil_klasifikasi,
   .rekomendasi_produk,
@@ -617,3 +623,4 @@
 .produk-card a:hover {
   text-decoration: underline;
 }
+
