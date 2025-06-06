@@ -5,30 +5,23 @@
   "main": "index.js",
   "homepage": "https://salwa256.github.io/capstone/",
   "scripts": {
+    "start": "webpack serve",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --overwrite"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/salwa256/capstone.git"
-  },
-  "bugs": {
-    "url": "https://github.com/salwa256/capstone/issues"
-  },
-  "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.27.3",
-    "@babel/preset-env": "^7.27.2",
-    "babel-loader": "^10.0.0",
-    "copy-webpack-plugin": "^13.0.0",
-    "css-loader": "^7.1.2",
-    "gh-pages": "^6.3.0",
-    "html-webpack-plugin": "^5.6.3",
-    "style-loader": "^4.0.0",
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "^5.2.1",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.3",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "babel-loader": "^10.0.0",
+    "@babel/core": "^7.27.3",
+    "@babel/preset-env": "^7.27.2"
   },
   "dependencies": {
     "nanoid": "^3.3.11"
