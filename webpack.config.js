@@ -37,7 +37,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: "foto", to: "foto" }, // ⬅️ Salin folder `foto` ke `dist/foto`
+        { from: "foto", to: "foto" },
       ],
     }),
   ],
